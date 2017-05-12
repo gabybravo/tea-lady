@@ -11,30 +11,30 @@
 	</header>
 	<section id="formulario">
 		<p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
-		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
-		<form action="">
-			<label for="Nombre Dueño"> Nombre:</label>
-			<input type="text">
-			<label for="Nombre mascota"> Apellido:</label>
-			<input type="text">
-			<label for="Email"> Correo Electrónico:</label> 
-			<input type="email">
-			<label for="Dirección">Dirección: </label>
-			<input type="text">
-			<label for="Teléfono">Teléfono:</label>
-			<input type="text">
-			<label for="">Selecciona un pack:</label>
-			<select name="" id="">
+		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p><br>
+		<form name= "form" action="" id="form">
+			<label for="Nombre"> Nombre:</label><br>
+			<input type="text" id="nombre" title="Ingrese su nombre" required="required"><br>
+			<label for="Apellido"> Apellido:</label><br>
+			<input type="text" id="apellido" required="required"><br>
+			<label for="Email"> Correo Electrónico:</label><br> 
+			<input type="email" id="mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="required"><br>
+			<label for="Dirección"> Dirección: </label><br>
+			<input type="text" id="direccion" required="required"><br>
+			<label for="Teléfono"> Teléfono:</label><br>
+			<input type="tel" id="fono" pattern="[0-9]{9}" required="required"><br>
+			<label for=""> Selecciona un pack:</label><br>
+			<select type="dropdown" name="" id="opciones" required="required"><br>
 				<option value="">Escoje tu opción</option>
 				<option value="">Pack de té clásico (Té negro)</option>
-				<option value="">Pack frutales (Hierbas y té con aromatizado con fruta</option>
+				<option value="">Pack frutales (Hierbas y té con aromatizado con fruta)</option>
 				<option value="">Pack variedades (Té verde, rojo y blanco)</option>
-			</select>
+			</select><br><br>
 			<label for=""></label>
-			<input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos
+			<input type="checkbox" id="check" required="required"> Recibe nuestro newsletter mensual con actividades y sorteos.<br><br>
 			<button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
 		</form>
-	</section>
+	</section><br>
 	<section id="clientes">
 		<!-- Acá van los datos de ingresados por los clientes -->
 	</section>
